@@ -1,0 +1,8 @@
+jobs:
+  download_sbom:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download SBOM
+        run: |
+          curl -LO https://github.com/vijay-art/spark-rahi/dependency-graph/sbom
